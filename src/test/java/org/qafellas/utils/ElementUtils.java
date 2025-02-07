@@ -14,8 +14,7 @@ public class ElementUtils {
     }
 
     public void uploadFile(String fileName){
-        page.locator("#singleFileInput").setInputFiles(Paths.get("src/test/java/org/qafellas/data/" +fileName));
-        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Upload Single File")).click();
+        page.locator("[type='file']").setInputFiles(Paths.get("src/test/java/org/qafellas/data/" +fileName));
 
     }
 }

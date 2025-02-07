@@ -17,6 +17,11 @@
                     <include name="shouldFilterOnlyRentalListings"/>
                 </methods>
             </class>
+            <class name="org.qafellas.tests.ProfileTests">
+                <methods>
+                    <include name="shouldUpdateProfilePicture"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
